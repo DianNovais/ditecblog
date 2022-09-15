@@ -1,0 +1,19 @@
+.errorContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+}
+
+.errorContainer h2{
+    background: var(--linear-primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    text-transform: uppercase;
+}
+
+.errorContainer h3 {
+    text-transform: uppercase;
+}

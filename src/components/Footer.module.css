@@ -1,0 +1,22 @@
+footer {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    background-color: var(--logo-color);
+    background: linear-gradient(90deg, var(--logo-color) 0%, rgb(126, 29, 150) 35%, rgb(98, 15, 231) 100%);
+}
+
+@media only screen and (max-width: 720px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer p{
+        font-size: 0.7rem;
+    }
+    
+}

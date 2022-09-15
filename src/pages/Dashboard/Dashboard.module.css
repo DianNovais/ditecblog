@@ -1,0 +1,102 @@
+.postsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.postsContainer h2{
+    background: var(--linear-primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nullContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 50px 1px var(--logo-color);
+    width: 100%;
+    margin-top: 20px;
+}
+
+.imgCont img{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.postContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 30%;
+}
+
+.tagsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tagsContainer span{
+    margin-left: 5px;
+}
+
+.trashContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.trashContainer i {
+    font-size: 30px;
+    margin-left: 5px;
+    margin-left: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.trashContainer i:hover {
+    color: red;
+}
+
+.functions{
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 720px){
+    .imgCont img{
+        width: 100px;
+        height: 100px;
+    }
+    .postContainer p{
+        font-size: 0.8em;
+    }
+    .postContainer{
+        max-height: 100px;
+        padding: 5px;
+    }
+    .tagsContainer span{
+        font-size: 0.7em;
+    }
+    .functions{
+        max-height: 100px;
+    }
+    .trashContainer{
+        font-size: 0.7em;
+    }
+    .trashContainer i {
+        font-size: 20px;
+    }
+    .btnRoot{
+        width: 10px;
+    }
+}

@@ -1,0 +1,230 @@
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.active{
+    box-shadow: 0 2px 0 0 var(--logo-color);
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    
+}
+
+nav h2 {
+    font-size: 1.8rem;
+    margin-left: 40px;
+    background: var(--linear-primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+/*PART MENU CENTER*/
+
+.menuCenter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuCenter span{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(141, 139, 139);
+    transition: all 0.3s;
+}
+.menuCenter span:hover{
+    color: rgb(88, 88, 88);;
+}
+
+/* PART THE AUTH*/
+
+.auth{
+    display: flex;
+    flex-direction: row;
+}
+.login span {
+    display: flex;
+    margin-left: 10px;
+    color: var(--check-color);
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+.login span:hover{
+    color: rgb(136, 255, 195);
+}
+
+.singIn span{
+    display: flex;
+    text-align: center;
+    color: white;
+    background-color: var(--logo-color);
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+.singIn:hover{
+    transition: all 0.3s;
+    opacity: 0.8;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.responsiveMenu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+        transition: all 0.5s;
+}
+
+.hambuguer{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 5px;
+}
+.bar{
+    display: block;
+    height: 2px;
+    width: 30px;
+    margin: 10px auto;
+    transition: all 0.5s;
+    background-color: var(--logo-color);
+
+}
+
+.barOne{
+    display: block;
+    height: 2px;
+    width: 30px;
+    margin: 10px auto;
+    transition: all 0.5s;
+    transform: rotate(45deg) translateX(8px);
+    background-color: white;
+}
+.barTwo{
+    display: none;
+    transition: all 0.5s;
+}
+.barThree{
+    display: block;
+    height: 2px;
+    width: 30px;
+    margin: 10px auto;
+    transition: all 0.5s;
+    transform: rotate(-45deg) translateX(8px);
+    background-color: white;
+}
+
+/*RESPONSE*/
+@media only screen and (max-width: 720px) {
+    .hambuguer{
+        z-index: 10;
+        display: block;
+        margin-right: 40px;
+        transition: all 1s;
+    }
+
+    .activeMenu{
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 50vw;
+        transform: translateX(0);
+        transition: all 0.5s;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: var(--linear-primary-color);
+    }
+    
+    .authContainer{
+        position: fixed;
+        bottom: 20px;
+        right: -30px;
+    }
+
+    .navBar {
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 50vw;
+        transform: translateX(1000px);
+        transition: all 0.5s;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: var(--linear-primary-color);
+    }
+     .logo{
+        font-size: 1.0rem;
+    }
+    .menuCenter{
+        display: flex;
+        flex-direction: column;
+    }
+    .menuCenter a{
+        margin-top: 10px;
+
+    }
+    .responsiveMenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+        transition: all 0.5s;
+        margin-top: 60px;
+    }
+    
+
+    .menuCenter span{
+        color: white;
+    }
+    .menuCenter span:hover{
+        color: rgb(223, 219, 219);;
+    }
+
+    .active{
+        box-shadow: 0 2px 0 0 var(white);
+    }
+    .auth button{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+}

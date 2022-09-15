@@ -1,0 +1,107 @@
+:root{
+  --logo-color: rgb(148, 40, 219);
+  --linear-primary-color: linear-gradient(90deg, var(--logo-color) 0%, rgb(126, 29, 150) 35%, rgb(98, 15, 231) 100%);
+  --check-color: rgb(52, 221, 137);
+}
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+main{
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+a, nav, button{
+  text-decoration: none;
+
+}
+
+input, textarea {
+  box-sizing: border-box;
+  border: none;
+  padding: 0.8em;
+  border: 2px solid #CCC;
+}
+
+.btnRed{
+  border: none;
+  color: white;
+  background-color: rgb(250, 36, 36);
+  border-radius: 5px;
+  width: auto;
+  height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.loadPage{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  font-size: 10px;
+  justify-content: center;
+}
+
+.btnRoot{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  color: white;
+  background-color: var(--logo-color);
+  border-radius: 5px;
+  max-width: 100px;
+  height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.btnLight{
+  background-color: white;
+  color: var(--logo-color);
+  border: 1px solid var(--logo-color);
+}
+
+.btnRed:hover{
+  opacity: 0.8;
+}
+
+.btnRoot:hover{
+  opacity: 0.8;
+}
+
+.noBorder{
+  border-radius: 0;
+  border: 0;
+}
+
+@media only screen and (max-width: 720px){
+  .btnRoot{
+    font-size: 0.8rem;
+    display: flex;
+    border-radius: 5px;
+    max-width: 90px;
+    height: 20px;
+    margin-right: 3px;
+    cursor: pointer;
+    margin-top: 2px;
+    padding: 2px;
+  }
+  .noBorder{
+    border-radius: 0;
+    border: 0;
+  }
+}

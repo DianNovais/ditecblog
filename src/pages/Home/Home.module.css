@@ -1,0 +1,63 @@
+.searchContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.searchContainer form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: center;
+}
+
+.searchBar{
+    display: flex;
+    width: 60vw;
+}
+
+.noPost{
+    text-align: center;
+    justify-content: center;
+}
+
+.postMap{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+form button{
+    height: 40px;
+    background-color: var(--logo-color);
+    color: white;
+    border: 0;
+}
+
+
+/*RESPONSE*/
+
+@media only screen and (max-width: 720px){
+    .searchBar{
+        height: 30px;
+        width: 60vw;
+    }
+    form button{
+        height: 30px;
+    }
+}

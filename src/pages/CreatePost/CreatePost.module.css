@@ -1,0 +1,50 @@
+form h2 {
+    font-size: 1.5rem;
+    background: var(--linear-primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    width: 100%;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+form span {
+    opacity: 0.8;
+}
+form label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-top: 10px;
+}
+form input, form textarea{
+    width: 60%;
+}
+
+.btn {
+    background-color: white;
+    color:var(--check-color);
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.8;
+}
